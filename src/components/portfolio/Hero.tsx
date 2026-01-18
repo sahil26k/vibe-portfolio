@@ -126,20 +126,33 @@ export function Hero({ startAnimation }: { startAnimation?: boolean }) {
           </motion.div>
           
           <div className="mt-16 flex flex-col items-center gap-6 hero-reveal">
-            <button 
-              onClick={() => {
-                const element = document.getElementById("projects")
-                if (element) {
-                  element.scrollIntoView({ behavior: "smooth" })
-                }
-              }}
-              className="group relative px-10 py-4 border border-foreground/10 hover:border-foreground/40 transition-colors overflow-hidden"
-            >
-              <span className="relative z-10 text-[10px] font-bold uppercase tracking-[0.3em]">Explore Works</span>
-              <motion.div 
-                className="absolute inset-0 bg-foreground/5 -translate-x-full group-hover:translate-x-0 transition-transform duration-500"
-              />
-            </button>
+            <div className="flex gap-4">
+              <button 
+                onClick={() => {
+                  const element = document.getElementById("projects")
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" })
+                  }
+                }}
+                className="group relative px-10 py-4 border border-foreground/10 hover:border-foreground/40 transition-colors overflow-hidden"
+              >
+                <span className="relative z-10 text-[10px] font-bold uppercase tracking-[0.3em]">Explore Works</span>
+                <motion.div 
+                  className="absolute inset-0 bg-foreground/5 -translate-x-full group-hover:translate-x-0 transition-transform duration-500"
+                />
+              </button>
+              
+              <a 
+                href="/sahil.pdf" 
+                download="Sahil_Kashyap_Resume.pdf"
+                className="group relative px-10 py-4 border border-foreground/10 hover:border-foreground/40 transition-colors overflow-hidden"
+              >
+                <span className="relative z-10 text-[10px] font-bold uppercase tracking-[0.3em]">Download Resume</span>
+                <motion.div 
+                  className="absolute inset-0 bg-foreground/5 -translate-x-full group-hover:translate-x-0 transition-transform duration-500"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </motion.div>
