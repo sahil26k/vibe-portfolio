@@ -59,7 +59,7 @@ export function Process() {
     return (
       <section id="process" ref={targetRef} className="relative h-[300vh]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <div className="absolute top-24 left-6 lg:left-24 z-10">
+        <div className="absolute top-6 left-6 lg:left-24 lg:top-12 z-10">
           <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-muted-foreground mb-4 block">Workflow</span>
           <h2 className="text-[clamp(2rem,8vw,5rem)] font-black uppercase tracking-tighter syne-font leading-[0.9]">
             The <span className="italic font-light text-muted-foreground/50">Delivery</span> <br />
@@ -69,7 +69,7 @@ export function Process() {
 
         <motion.div style={{ x }} className="flex gap-12 px-6 lg:px-24">
           {/* Spacer to start cards after the title */}
-          <div className="shrink-0 w-[40vw] lg:w-[30vw]" />
+          <div className="shrink-0 w-[15vw] lg:w-[30vw]" />
           
           {steps.map((step, index) => (
             <div

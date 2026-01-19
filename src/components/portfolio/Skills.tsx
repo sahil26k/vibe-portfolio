@@ -75,7 +75,7 @@ export function Skills() {
         const totalWidth = slider1Ref.current.scrollWidth / 2
         gsap.to(slider1Ref.current, {
           x: -totalWidth,
-          duration: 25,
+          duration: 50,
           ease: "none",
           repeat: -1,
         })
@@ -88,7 +88,7 @@ export function Skills() {
           { x: -totalWidth },
           {
             x: 0,
-            duration: 20,
+            duration: 50,
             ease: "none",
             repeat: -1,
           }
@@ -100,7 +100,7 @@ export function Skills() {
         const totalWidth = slider3Ref.current.scrollWidth / 2
         gsap.to(slider3Ref.current, {
           x: -totalWidth,
-          duration: 30,
+          duration: 50,
           ease: "none",
           repeat: -1,
         })
